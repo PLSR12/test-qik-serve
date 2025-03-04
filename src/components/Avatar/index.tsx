@@ -2,11 +2,7 @@ import { useTranslation } from "react-i18next";
 import { AvatarContainer } from "./styles";
 import { Dropdown, type MenuProps } from "antd";
 
-interface ZAvatarProps {
-	src?: string;
-}
-
-const Avatar = ({ src }: ZAvatarProps) => {
+const Avatar = () => {
 	const { t } = useTranslation();
 	const userPicture =
 		"https://static.vecteezy.com/system/resources/previews/005/129/844/non_2x/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg";

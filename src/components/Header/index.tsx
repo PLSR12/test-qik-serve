@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import { AvatarContainer, HeaderStyled } from "./styles";
-import Avatar from "../Avatar/ZAvatar";
+import Avatar from "../Avatar";
 import LanguageSelector from "../LanguageSelector";
 import { useTranslation } from "react-i18next";
 import { IoBagOutline } from "react-icons/io5";
