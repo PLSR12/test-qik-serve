@@ -1,7 +1,7 @@
 {
 	"rewrites": [
 		{
-			"source": "/locales/:path*",
+			"source": "/public/locales/:path*",
 			"destination": "/public/locales/:path*"
 		},
 		{
