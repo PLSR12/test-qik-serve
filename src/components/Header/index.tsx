@@ -25,7 +25,7 @@ const Header = () => {
 
 	return (
 		<HeaderStyled>
-			<Link to="/menu" style={{ color: "#fff" }}>
+			<Link to="/" style={{ color: "#fff" }}>
 				{t("menu")}
 			</Link>
 
