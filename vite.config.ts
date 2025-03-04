@@ -6,7 +6,7 @@ export default defineConfig(() => {
 	return {
 		plugins: [react()],
 		envPrefix: "REACT_APP_",
-
+		base: "/",
 		resolve: {
 			alias: [],
 		},
