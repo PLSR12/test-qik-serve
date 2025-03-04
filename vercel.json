@@ -5,6 +5,10 @@
 			"destination": "/locales/:path*"
 		},
 		{
+			"source": "/locales/:path*",
+			"destination": "/locales/:path*"
+		},
+		{
 			"source": "/(.*)",
 			"destination": "/index.html"
 		}
