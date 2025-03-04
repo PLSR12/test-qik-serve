@@ -1,18 +1,23 @@
-import { Provider, useSelector } from "react-redux";
+import { Provider } from "react-redux";
 import store from "./stores/store";
 import Router from "./routes";
 import { BrowserRouter } from "react-router";
 import { GlobalStyle } from "../src/styles/index";
-import i18n from "./utils/i18n";
-import { useEffect } from "react";
+import { ConfigProvider } from "antd";
+import { antDefaultTheme } from "./styles/ant/default";
+import { App as AntdApp } from "antd";
 
 function App() {
 	return (
 		<BrowserRouter>
-			<Provider store={store}>
-				<GlobalStyle />
-				<Router />
-			</Provider>
+			<ConfigProvider theme={antDefaultTheme}>
+				<AntdApp>
+					<Provider store={store}>
+						<GlobalStyle />
+						<Router />
+					</Provider>
+				</AntdApp>
+			</ConfigProvider>
 		</BrowserRouter>
 	);
 }

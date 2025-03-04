@@ -1,19 +1,19 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
-import { userSlice } from "./user/slice";
 import { persistReducer, persistStore } from "redux-persist";
 import storage from "redux-persist/es/storage";
 import languageReducer from "./language/slice";
+import cartReducer from "./cart/slice";
 
 const persistConfig = {
 	key: "root",
 	storage,
-	whitelist: [],
+	whitelist: ["cart"],
 	blacklist: [],
 };
 
 const reducers = combineReducers({
-	user: userSlice.reducer,
 	language: languageReducer,
+	cart: cartReducer,
 });
 
 export type RootReducer = ReturnType<typeof reducers>;

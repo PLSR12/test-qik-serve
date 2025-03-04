@@ -59,3 +59,8 @@ export const TabsStyled = styled(Tabs)`
 		scrollbar-width: none;
 	}
 `;
+
+export const Container = styled.div`
+	width: 100%;
+	padding: 24px;
+`;

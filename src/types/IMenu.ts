@@ -6,7 +6,7 @@ export interface IMenuCategory {
 }
 
 export interface IMenuItem {
-	id: number;
+	id: string;
 	name: string;
 	description: string;
 	position: number;

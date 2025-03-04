@@ -9,9 +9,5 @@ export const ContainerLanguage = styled.div`
 	span {
 		color: white;
 		cursor: pointer;
-
-		::hover {
-			opacity: 0.4;
-		}
 	}
 `;

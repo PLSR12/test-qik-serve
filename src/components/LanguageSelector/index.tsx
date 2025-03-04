@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useCallback, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setLanguage } from "../../stores/language/slice";
 import i18n from "../../utils/i18n";
 import { ContainerLanguage } from "./styles";
 import { Dropdown, MenuProps } from "antd";
 import { FaLanguage } from "react-icons/fa";
+import { clearCart } from "../../stores/cart/slice";
 
 const LanguageSelector: React.FC = () => {
 	const dispatch = useDispatch();
@@ -12,11 +13,15 @@ const LanguageSelector: React.FC = () => {
 
 	useEffect(() => {
 		i18n.changeLanguage(language);
+		dispatch(clearCart());
 	}, [language]);
 
-	const handleChangeLanguage = (lang: string) => {
-		dispatch(setLanguage(lang));
-	};
+	const handleChangeLanguage = useCallback(
+		(lang: string) => {
+			dispatch(setLanguage(lang));
+		},
+		[setLanguage]
+	);
 
 	const items: MenuProps & MenuProps["items"] = [
 		{

@@ -7,5 +7,15 @@
 	"user-datas": "Dados do usuário",
 	"menu": "Cardápio",
 	"all": "Todos",
-	"Search here": "Pesquise aqui..."
+	"Search here": "Pesquise aqui...",
+	"loading": "Carregando",
+	"Choose between individual or combo": "Escolha entre individual ou combo:",
+	"Add to bag": "Adicionar à sacola",
+	"bag": "Sacola",
+	"Check your bag items here": "Confira aqui os itens da sacola:",
+	"price": "Preço",
+	"quantity": "Quantidade",
+	"go to checkout": "Ir para pagamento",
+	"total value": "Valor Total",
+	"bag empty": "Sua sacola está vazia..."
 }

@@ -8,7 +8,6 @@ import {
 } from "./styles";
 import { IMenuItem } from "../../types/IMenu";
 import { CardProps } from "antd";
-import { useAutoTranslate } from "../../hooks/useAutoTranslate";
 import { useCurrencyFormatter } from "../../hooks/useCurrencyFormatter";
 
 export interface CardMenuProps extends CardProps {
@@ -25,8 +24,8 @@ const CardMenu: React.FC<CardMenuProps> = ({ menuItem, ...rest }) => {
 					<img src={menuItem.imageUrl} width={100} height={100} />
 				</div>
 				<ContainerTexts>
-					<h1>{useAutoTranslate(menuItem.name)}</h1>
-					<p>{useAutoTranslate(menuItem.description)}</p>
+					<h1>{menuItem.name}</h1>
+					<p>{menuItem.description}</p>
 				</ContainerTexts>
 			</ContainerHeaderCard>
 			<ContainerFooterCard>

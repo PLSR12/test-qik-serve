@@ -7,5 +7,15 @@
 	"user-datas": "User data",
 	"menu": "Menu",
 	"all": "All",
-	"Search here": "Search here..."
+	"Search here": "Search here...",
+	"loading": "Loading",
+	"Choose between individual or combo": "Choose between individual or combo:",
+	"Add to bag": "Add to bag",
+	"bag": "Bag",
+	"Check your bag items here": "Check your bag items here:",
+	"price": "Price",
+	"quantity": "Quantity",
+	"go to checkout": "Go to checkout",
+	"total value": "Total value",
+	"bag empty": "Bag is empty..."
 }
