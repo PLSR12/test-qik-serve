@@ -1,6 +1,10 @@
 {
 	"rewrites": [
 		{
+			"source": "/locales/(.*)",
+			"destination": "/public/locales/$1"
+		},
+		{
 			"source": "/(.*)",
 			"destination": "/index.html"
 		}
@@ -9,20 +13,6 @@
 		{
 			"src": "package.json",
 			"use": "@vercel/node"
-		}
-	],
-	"routes": [
-		{
-			"src": "/locales/(.*)",
-			"dest": "/public/locales/$1"
-		},
-		{
-			"src": "/public/(.*)",
-			"dest": "/public/$1"
-		},
-		{
-			"src": "/menu",
-			"dest": "/index.html"
 		}
 	]
 }
