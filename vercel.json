@@ -2,7 +2,7 @@
 	"rewrites": [
 		{
 			"source": "/public/locales/:path*",
-			"destination": "/public/locales/:path*"
+			"destination": "/locales/:path*"
 		},
 		{
 			"source": "/(.*)",
