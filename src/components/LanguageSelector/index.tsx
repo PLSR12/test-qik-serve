@@ -32,7 +32,7 @@ const LanguageSelector: React.FC = () => {
 		{
 			key: "2",
 			label: "PT-BR",
-			onClick: () => handleChangeLanguage("pt-br"),
+			onClick: () => handleChangeLanguage("pt"),
 		},
 	];
 

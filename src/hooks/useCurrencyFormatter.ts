@@ -6,7 +6,7 @@ export const useCurrencyFormatter = () => {
 	return (value: number) => {
 		return new Intl.NumberFormat(i18n.language, {
 			style: "currency",
-			currency: i18n.language === "pt-br" ? "BRL" : "USD",
+			currency: i18n.language === "pt" ? "BRL" : "USD",
 		}).format(value);
 	};
 };
