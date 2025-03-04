@@ -1,0 +1,16 @@
+{
+	"rewrites": [
+		{
+			"source": "/public/:path*",
+			"destination": "/public/:path*"
+		},
+		{
+			"source": "/locales/:path*",
+			"destination": "/locales/:path*"
+		},
+		{
+			"source": "/(.*)",
+			"destination": "/index.html"
+		}
+	]
+}
